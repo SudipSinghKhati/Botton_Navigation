@@ -1,3 +1,4 @@
+import 'package:button_navigation/theme/app_theme.dart';
 import 'package:button_navigation/view/about_us.dart';
 import 'package:button_navigation/view/dashbaord.dart';
 import 'package:button_navigation/view/home.dart';
@@ -11,6 +12,9 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Fonts and Theme',
+      theme: AppTheme.getApplcationTheme(),
+      
       initialRoute: '/',
       routes: {
         '/': (context) => const DashBoard(),

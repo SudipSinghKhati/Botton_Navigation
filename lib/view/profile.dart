@@ -11,8 +11,8 @@ class Profile extends StatelessWidget {
       ),
       body: Center(
         child: Column(children: [
-          Text("hello", style: TextStyle(fontSize: 20),),
-          Text("hello", style: TextStyle(fontSize: 20),),
+          Text("hello", style: TextStyle(fontSize: 20, fontFamily: 'Montserrat', fontWeight: FontWeight.bold),),
+          Text("hello", style: TextStyle(fontSize: 20, fontFamily: 'Open Sans', fontWeight: FontWeight.bold),),
           Text("hello", style: TextStyle(fontSize: 20),),
           Divider(),
           TextFormField(

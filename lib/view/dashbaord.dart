@@ -25,9 +25,9 @@ List<Widget> lstBottonScreen =[
       floatingActionButton: FloatingActionButton(onPressed: (){}, child: Icon(Icons.add),),
       // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.amber,
-        selectedItemColor: Colors.black,
-        unselectedItemColor: Colors.white,
+        // backgroundColor: Colors.amber,
+        // selectedItemColor: Colors.black,
+        // unselectedItemColor: Colors.white,
          items: [BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),BottomNavigationBarItem(icon: Icon(Icons.person), label: 'profile'), BottomNavigationBarItem(icon: Icon(Icons.safety_check), label: 'about UsS')], currentIndex: _selectedIndex,onTap: (index){setState(() {
         _selectedIndex = index;
       });},),

@@ -84,10 +84,11 @@ flutter:
         - asset: assets/fonts/montserrat/Montserrat-Regular.ttf
           weight: 100
           style: italic
-    - family: Trajan Pro
+    - family: Open Sans
       fonts:
-        - asset: fonts/TrajanPro.ttf
-        - asset: fonts/TrajanPro_Bold.ttf
+        - asset: assets\fonts\open_sans\OpenSans-BoldItalic.ttf
+        - asset: assets\fonts\open_sans\OpenSans-Italic.ttf
+        - asset: assets\fonts\open_sans\OpenSans-Regular.ttf
           weight: 700
   #
   # For details regarding fonts from package dependencies,
