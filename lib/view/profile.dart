@@ -10,28 +10,45 @@ class Profile extends StatelessWidget {
         title: const Text('Profile'),
       ),
       body: Center(
-        child: Column(children: [
-          Text("hello", style: TextStyle(fontSize: 20, fontFamily: 'Montserrat', fontWeight: FontWeight.bold),),
-          Text("hello", style: TextStyle(fontSize: 20, fontFamily: 'Open Sans', fontWeight: FontWeight.bold),),
-          Text("hello", style: TextStyle(fontSize: 20),),
-          Divider(),
-          TextFormField(
-          decoration: InputDecoration(
-            label: Text('Enter UserName'),
-          ),
-         ),
-         Divider(),
-         TextFormField(
-          decoration: InputDecoration(
-            label: Text('Enter Password', ),
-          ),
-          
-         ),
-         Divider(),
-         ElevatedButton(onPressed: (){}, child: Text('Submit'))
-        ],),
+        child: Column(
+          children: [
+            const Text(
+              "hello",
+              style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'Montserrat',
+                  fontWeight: FontWeight.bold),
+            ),
+            const Text(
+              "hello",
+              style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'Open Sans',
+                  fontWeight: FontWeight.bold),
+            ),
+            const Text(
+              "hello",
+              style: TextStyle(fontSize: 20),
+            ),
+            const Divider(),
+            TextFormField(
+              decoration: const InputDecoration(
+                label: Text('Enter UserName'),
+              ),
+            ),
+            const Divider(),
+            TextFormField(
+              decoration: const InputDecoration(
+                label: Text(
+                  'Enter Password',
+                ),
+              ),
+            ),
+            const Divider(),
+            ElevatedButton(onPressed: () {}, child: const Text('Submit'))
+          ],
+        ),
       ),
-      
     );
   }
 }

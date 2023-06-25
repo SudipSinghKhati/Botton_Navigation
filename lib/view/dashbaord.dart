@@ -11,29 +11,39 @@ class DashBoard extends StatefulWidget {
 }
 
 class _DashBoardState extends State<DashBoard> {
-  int _selectedIndex =0;
+  int _selectedIndex = 0;
 
-List<Widget> lstBottonScreen =[
-  const Home(),
-  const Profile(),
-  const AboutUS()
-];
+  List<Widget> lstBottonScreen = [
+    const Home(),
+    const Profile(),
+    const AboutUS()
+  ];
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: lstBottonScreen[_selectedIndex],
-      floatingActionButton: FloatingActionButton(onPressed: (){}, child: Icon(Icons.add),),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add),
+      ),
       // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomNavigationBar(
         // backgroundColor: Colors.amber,
         // selectedItemColor: Colors.black,
         // unselectedItemColor: Colors.white,
-         items: [BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),BottomNavigationBarItem(icon: Icon(Icons.person), label: 'profile'), BottomNavigationBarItem(icon: Icon(Icons.safety_check), label: 'about UsS')], currentIndex: _selectedIndex,onTap: (index){setState(() {
-        _selectedIndex = index;
-      });},),
-      
-    
-      
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'profile'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.safety_check), label: 'about UsS')
+        ],
+        currentIndex: _selectedIndex,
+        onTap: (index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
+      ),
     );
   }
 }
